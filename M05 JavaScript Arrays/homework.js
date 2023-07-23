@@ -103,21 +103,15 @@ function multiplicarArgumentos() {
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
    var producto = 1;   
-   var suma = 0;
-   if (arguments === 0) {
-      return 0; 
-   } else if (arguments.length === 1) {
-         return arguments[0]; 
-         } else {
-            for (var i = 0; i < arguments.length; i++) {
-               producto = (producto * arguments[i]); 
-               suma += producto;
-            }
-            return suma;
-      }
+   if (arguments.length === 0) {
+      return 0; }
+   for (var i = 0; i < arguments.length; i++) {
+      producto = (producto * arguments[i]); 
+       }
+    return producto;
    }
-   console.log(multiplicarArgumentos([4, 2, 5]))
-function cuentoElementos(array) {
+   
+ function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
    cant = 0;
